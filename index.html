@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue Directives</title>
+    <script src="https://unpkg.com/vue@next"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Hey this is a vue course</h1>
+      <h2 v-html="title"></h2>
+      <hr />
+      <h2>The v-else and v-if statement:</h2>
+      <h3 v-if="2 * 2 == 4" v-html="correct"></h3>
+      <h3 v-else v-html="incorrect"></h3>
+      <hr />
+      <h2>The v-else, v-if and v-elseif statement:</h2>
+      <h2 v-if="isShowing" v-html="yes"></h2>
+      <h2 v-else-if="isShowing === null">This is null</h2>
+      <h2 v-else>No is showing</h2>
+      <hr />
+      <h2>The v-show statement:</h2>
+      <h3 v-show="isShowing" v-html="yes"></h3>
+      <hr />
+      <h2>The v-text statement:</h2>
+      <h3 v-text="count"></h3>
+      <hr />
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
